@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OGE – Outbound Growth Engine | We Fill Your Pipeline</title>
-  <meta name="description" content="Stop chasing leads. We book qualified meetings directly into your calendar through targeted cold outreach.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+  <title>OGE – Done-For-You HubSpot Onboarding for Agencies</title>
+  <meta name="description" content="We handle your agency's entire HubSpot onboarding — strategy, setup, migration, and training — so you can focus on clients.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -19,10 +19,13 @@
           },
           colors: {
             brand: {
-              50: '#f0fdf4',
-              500: '#22c55e',
-              600: '#16a34a',
-              700: '#15803d',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+            },
+            accent: {
+              400: '#a78bfa',
+              500: '#8b5cf6',
             }
           }
         }
@@ -30,197 +33,376 @@
     }
   </script>
   <style>
-    .gradient-bg {
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    .hero-bg {
+      background: linear-gradient(135deg, #0a0a0f 0%, #111827 50%, #0f172a 100%);
     }
-    .glow {
-      box-shadow: 0 0 40px rgba(34, 197, 94, 0.15);
+    .section-dark {
+      background: #0f1117;
     }
+    .section-darker {
+      background: #0a0a0f;
+    }
+    .card-glass {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(10px);
+    }
+    .glow-blue {
+      box-shadow: 0 0 50px rgba(59, 130, 246, 0.15);
+    }
+    .glow-purple {
+      box-shadow: 0 0 50px rgba(139, 92, 246, 0.15);
+    }
+    .pricing-popular {
+      background: linear-gradient(135deg, rgba(59,130,246,0.1), rgba(139,92,246,0.1));
+      border: 1px solid rgba(59,130,246,0.3);
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-border {
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
-<body class="font-sans antialiased">
-  
-  <!-- Hero Section -->
-  <section class="gradient-bg min-h-screen flex items-center">
+<body class="font-sans antialiased bg-[#0a0a0f] text-white">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-[#0a0a0f]/80 backdrop-blur-lg border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold">
+        <span class="gradient-text">OGE</span>
+        <span class="text-slate-500 text-sm font-normal ml-2">by ELSOLVE</span>
+      </div>
+      <a href="#book" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200">
+        Book a Call
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20">
     <div class="max-w-6xl mx-auto px-6 py-20">
       <div class="text-center max-w-3xl mx-auto">
-        <!-- Badge -->
         <div class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/20 rounded-full px-4 py-2 mb-8">
           <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
-          <span class="text-brand-500 text-sm font-medium">Now booking discovery calls</span>
+          <span class="text-brand-400 text-sm font-medium">Done-for-you HubSpot onboarding</span>
         </div>
-        
-        <!-- Main headline -->
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          We fill your pipeline with 
-          <span class="text-brand-500">qualified meetings</span>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+          Your agency on HubSpot,<br>
+          <span class="gradient-text">without the headache</span>
         </h1>
-        
-        <!-- Subhead -->
-        <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto">
-          Stop chasing leads. Our Outbound Growth Engine books discovery calls with decision-makers directly into your calendar.
+
+        <p class="text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+          We handle the entire HubSpot setup for your agency — strategy, migration, automation, and training — so you're live in weeks, not months.
         </p>
-        
-        <!-- CTA -->
-        <a href="https://cal.com/elsolve/discovery" 
-           class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg glow hover:scale-105">
-          Book a Discovery Call
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-          </svg>
-        </a>
-        
-        <p class="text-slate-500 text-sm mt-4">30-minute call • No commitment • Free</p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#book"
+             class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg glow-blue hover:scale-105">
+            Book a Discovery Call
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="#pricing"
+             class="inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg">
+            View Pricing
+          </a>
+        </div>
+
+        <p class="text-slate-600 text-sm mt-6">30-minute call · No commitment · Free</p>
       </div>
     </div>
   </section>
 
-  <!-- Problem Section -->
-  <section class="bg-slate-50 py-20">
+  <!-- Social Proof Bar -->
+  <section class="section-dark border-y border-white/5 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center">
+        <p class="text-slate-500 text-sm font-medium uppercase tracking-wider mb-8">Trusted by growing agencies across the UK</p>
+        <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+          <div class="stat-border rounded-xl px-8 py-6 text-center">
+            <div class="text-3xl font-bold gradient-text">50+</div>
+            <div class="text-slate-500 text-sm mt-1">Agencies onboarded</div>
+          </div>
+          <div class="stat-border rounded-xl px-8 py-6 text-center">
+            <div class="text-3xl font-bold gradient-text">3 weeks</div>
+            <div class="text-slate-500 text-sm mt-1">Average go-live</div>
+          </div>
+          <div class="stat-border rounded-xl px-8 py-6 text-center">
+            <div class="text-3xl font-bold gradient-text">98%</div>
+            <div class="text-slate-500 text-sm mt-1">Client satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Handle -->
+  <section class="section-darker py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          Sound familiar?
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Everything handled. <span class="gradient-text">You just show up.</span>
         </h2>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl border border-slate-200">
-          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">No time to prospect</h3>
-          <p class="text-slate-600">You're busy delivering for clients. Finding new ones falls to the bottom of the list.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-slate-200">
-          <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">Referrals aren't enough</h3>
-          <p class="text-slate-600">Word of mouth got you started. But it's unpredictable and doesn't scale.</p>
-        </div>
-        
-        <div class="bg-white p-8 rounded-xl border border-slate-200">
-          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-            <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-          </div>
-          <h3 class="text-lg font-semibold text-slate-900 mb-2">Cold outreach feels spammy</h3>
-          <p class="text-slate-600">You've tried it before. Low response rates. Burnt domains. No ROI.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution Section -->
-  <section class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          How we do it differently
-        </h2>
-        <p class="text-xl text-slate-600 max-w-2xl mx-auto">
-          The Outbound Growth Engine combines smart targeting, proven messaging, and proper deliverability infrastructure.
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+          From portal configuration to team training, we do the heavy lifting so your agency can hit the ground running.
         </p>
       </div>
-      
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8">
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white font-semibold">1</div>
-            <div>
-              <h3 class="text-lg font-semibold text-slate-900 mb-1">Precision targeting</h3>
-              <p class="text-slate-600">We find the right decision-makers at companies that actually need what you sell.</p>
-            </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
           </div>
-          
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white font-semibold">2</div>
-            <div>
-              <h3 class="text-lg font-semibold text-slate-900 mb-1">Personalized sequences</h3>
-              <p class="text-slate-600">No templates. Every email is researched and relevant to the recipient.</p>
-            </div>
-          </div>
-          
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white font-semibold">3</div>
-            <div>
-              <h3 class="text-lg font-semibold text-slate-900 mb-1">Protected deliverability</h3>
-              <p class="text-slate-600">Warmed domains, proper DNS, smart throttling. Your reputation stays intact.</p>
-            </div>
-          </div>
-          
-          <div class="flex gap-4">
-            <div class="flex-shrink-0 w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white font-semibold">4</div>
-            <div>
-              <h3 class="text-lg font-semibold text-slate-900 mb-1">Meetings, not leads</h3>
-              <p class="text-slate-600">We book qualified calls directly into your calendar. You just show up.</p>
-            </div>
-          </div>
+          <h3 class="text-lg font-semibold mb-2">Portal Setup & Configuration</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">CRM properties, pipelines, deal stages, lifecycle stages — all configured to match your agency's sales process.</p>
         </div>
-        
-        <div class="bg-slate-900 rounded-2xl p-8 text-white">
-          <div class="space-y-6">
-            <div class="flex items-center gap-3">
-              <div class="w-3 h-3 bg-brand-500 rounded-full"></div>
-              <span class="text-slate-300">Prospect identified</span>
-            </div>
-            <div class="ml-1.5 w-0.5 h-6 bg-slate-700"></div>
-            <div class="flex items-center gap-3">
-              <div class="w-3 h-3 bg-brand-500 rounded-full"></div>
-              <span class="text-slate-300">Personalized outreach sent</span>
-            </div>
-            <div class="ml-1.5 w-0.5 h-6 bg-slate-700"></div>
-            <div class="flex items-center gap-3">
-              <div class="w-3 h-3 bg-brand-500 rounded-full"></div>
-              <span class="text-slate-300">Interest confirmed</span>
-            </div>
-            <div class="ml-1.5 w-0.5 h-6 bg-slate-700"></div>
-            <div class="flex items-center gap-3">
-              <div class="w-3 h-3 bg-brand-500 rounded-full animate-pulse"></div>
-              <span class="text-white font-semibold">Meeting booked in your calendar</span>
-            </div>
+
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-accent-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+            </svg>
           </div>
+          <h3 class="text-lg font-semibold mb-2">Data Migration</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Clean import of contacts, companies, and deals from your existing CRM. No data left behind, no duplicates.</p>
+        </div>
+
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Automation & Workflows</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Lead routing, follow-up sequences, deal stage automation — set it and forget it.</p>
+        </div>
+
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-accent-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Reporting & Dashboards</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Custom dashboards for pipeline, revenue, and team activity. See what matters at a glance.</p>
+        </div>
+
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-brand-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Team Training</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Live training sessions for your team. Everyone knows exactly how to use the system from day one.</p>
+        </div>
+
+        <div class="card-glass rounded-2xl p-8">
+          <div class="w-12 h-12 bg-accent-500/10 rounded-xl flex items-center justify-center mb-5">
+            <svg class="w-6 h-6 text-accent-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Ongoing Support</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">Post-launch support to handle tweaks, questions, and optimisations as your team gets up to speed.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="gradient-bg py-20">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
-        Ready to fill your pipeline?
-      </h2>
-      <p class="text-xl text-slate-400 mb-10">
-        Let's talk about your growth goals. 30 minutes, no pressure.
-      </p>
-      
-      <a href="https://cal.com/elsolve/discovery" 
-         class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-lg glow hover:scale-105">
-        Book Your Discovery Call
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-        </svg>
-      </a>
+  <!-- Pricing -->
+  <section id="pricing" class="section-dark py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Simple, transparent <span class="gradient-text">pricing</span>
+        </h2>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+          Choose the level of support your agency needs. All plans include full onboarding and dedicated account management.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Starter -->
+        <div class="card-glass rounded-2xl p-8 flex flex-col">
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-slate-300 mb-1">Starter</h3>
+            <p class="text-slate-500 text-sm">For agencies getting started with HubSpot</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£1,500</span>
+            <span class="text-slate-500">/mo</span>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              CRM setup & configuration
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Up to 1,000 contact migration
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              3 automated workflows
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Basic reporting dashboard
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              2 hours team training
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Email support
+            </li>
+          </ul>
+          <a href="#book" class="block text-center bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Growth (Popular) -->
+        <div class="pricing-popular rounded-2xl p-8 flex flex-col relative glow-blue">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+            Most Popular
+          </div>
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-white mb-1">Growth</h3>
+            <p class="text-slate-400 text-sm">For agencies scaling their operations</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£3,500</span>
+            <span class="text-slate-400">/mo</span>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Everything in Starter
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Up to 10,000 contact migration
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              10 automated workflows
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Advanced reporting & dashboards
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              5 hours team training
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Slack + email priority support
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-300">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Third-party integrations
+            </li>
+          </ul>
+          <a href="#book" class="block text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+            Get Started
+          </a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="card-glass rounded-2xl p-8 flex flex-col">
+          <div class="mb-6">
+            <h3 class="text-lg font-semibold text-slate-300 mb-1">Enterprise</h3>
+            <p class="text-slate-500 text-sm">For agencies with complex requirements</p>
+          </div>
+          <div class="mb-6">
+            <span class="text-4xl font-bold">£6,000</span>
+            <span class="text-slate-500">/mo</span>
+          </div>
+          <ul class="space-y-3 mb-8 flex-grow">
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Everything in Growth
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Unlimited contact migration
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Unlimited workflows
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Custom API integrations
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Full-day onsite training
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              Dedicated account manager
+            </li>
+            <li class="flex items-start gap-3 text-sm text-slate-400">
+              <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              SLA-backed response times
+            </li>
+          </ul>
+          <a href="#book" class="block text-center bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book a Call (Cal.com embed) -->
+  <section id="book" class="section-darker py-24">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Let's get your agency <span class="gradient-text">on HubSpot</span>
+        </h2>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto">
+          Book a free 30-minute discovery call. We'll assess your needs and map out your onboarding plan.
+        </p>
+      </div>
+
+      <!-- Cal.com Embed -->
+      <div class="card-glass rounded-2xl p-2 glow-blue">
+        <iframe
+          src="https://cal.com/elsolve/discovery?embed=true&theme=dark"
+          style="width:100%;height:650px;border:none;border-radius:12px;"
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-900 py-8 border-t border-slate-800">
+  <footer class="section-dark py-10 border-t border-white/5">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-        <div class="text-slate-400 text-sm">
+        <div class="text-slate-500 text-sm">
           © 2026 ELSOLVE LTD. All rights reserved.
         </div>
-        <div class="flex items-center gap-6 text-sm text-slate-400">
-          <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
+        <div class="flex items-center gap-6 text-sm text-slate-500">
+          <a href="https://elsolve.co.uk/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
           <a href="mailto:hello@elsolve.co.uk" class="hover:text-white transition-colors">hello@elsolve.co.uk</a>
         </div>
       </div>
